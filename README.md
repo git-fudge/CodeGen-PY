@@ -68,17 +68,6 @@ To run the file within your test project, right click on your Python file inside
 
 ![Run Test Project - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Apimaticcalculator-Python&projectName=apimaticcalculator&libraryName=apimaticcalculator.apimaticcalculator_client&className=ApimaticcalculatorClient&step=runProject)
 
-## Test the SDK
-
-You can test the generated SDK and the server with test cases. `unittest` is used as the testing framework and `pytest` is used as the test runner. You can run the tests as follows:
-
-Navigate to the root directory of the SDK and run the following commands
-
-```
-pip install -r test-requirements.txt
-pytest
-```
-
 ## Initialize the API Client
 
 **_Note:_** Documentation for the client can be found [here.](doc/client.md)

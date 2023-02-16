@@ -25,6 +25,7 @@ def get_calculate(self,
 | `operation` | [`OperationTypeEnum`](../../doc/models/operation-type-enum.md) | Template, Required | The operator to apply on the variables |
 | `x` | `float` | Query, Required | The LHS value |
 | `y` | `float` | Query, Required | The RHS value |
+| `z` | `string` | Query, Required | asd |
 
 ## Response Type
 
@@ -42,6 +43,9 @@ collect['x'] = x
 
 y = 165.14
 collect['y'] = y
+
+z = 'z4'
+collect['z'] = z
 
 result = simple_calculator_controller.get_calculate(collect)
 ```

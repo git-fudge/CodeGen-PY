@@ -39,6 +39,7 @@ class SimpleCalculatorController(BaseController):
                         the variables
                     x -- float -- The LHS value
                     y -- float -- The RHS value
+                    z -- string -- asd
 
         Returns:
             float: Response from the API.
@@ -65,6 +66,9 @@ class SimpleCalculatorController(BaseController):
             .query_param(Parameter()
                          .key('y')
                          .value(options.get('y', None)))
+            .query_param(Parameter()
+                         .key('z')
+                         .value(options.get('z', None)))
         ).response(
             ResponseHandler()
             .deserializer(APIHelper.json_deserialize)
